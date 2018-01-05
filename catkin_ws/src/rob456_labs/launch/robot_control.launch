@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="stage_ros" type="stageros" name="simulator" args="$(find rob456_hw2)/worlds/manyDots.world"/>
+  <node pkg="rob456_labs" type="lab2.py" name="lab2" output="screen">
+	  <param name="goalX" value=" 0.0" />
+    <param name="goalY" value="0.0" />
+  </node>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/mohamed/catkin_ws/install
+
+Name: rob456_labs
+Description: Description of rob456_labs
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mohamed/catkin_ws/install/lib 
+Requires: 

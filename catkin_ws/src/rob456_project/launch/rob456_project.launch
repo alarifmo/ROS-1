@@ -1,0 +1,13 @@
+<launch>
+  <!--Launch world-->
+  <node pkg="stage_ros" type="stageros" name="simulator" args="$(find rob456_hw3)/worlds/manyDotsNoisyOdom.world"/>
+  <!--node pkg="rob456_hw3" type="hw3.py" name="lab3" output="screen"/-->
+  <!--node pkg="gmapping" type="slam_gmapping" name="gmapping_" output="screen">
+   <remap from="scan" to="base_scan"/>
+   <param name="/use_sim_time" value="true"/>
+  </node-->
+
+  <!--launch move in square-->
+  <node pkg="rob456_project" type="move_in_square.py" name="move_in_square" output="screen"/>
+  <node pkg="rviz" type="rviz" name="visualizer" output="screen" args="-d $(find rob456_hw3)/rvizsetup.rviz"/>
+</launch>
